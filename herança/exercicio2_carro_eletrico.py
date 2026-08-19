@@ -21,7 +21,8 @@ class CarroEletrico(Carro):
     def __init__(self, marca, modelo):
         super().__init__(marca, modelo)
         self.combustivel = 0
-        self.bateria = 0
+        self.bateria = 0        # Por que a bateria começa em 0? Seria mais fácil começar em 100 por padrão (passado como parametro >> bateria=100) 
+        # e então utilizar self.bateria = bateria
 
     def acelerar(self):
         if self.bateria >= 5:
