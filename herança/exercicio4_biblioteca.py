@@ -39,7 +39,7 @@ class Usuario:
         if item in self.itens_emprestados:
             item.devolver()
             self.itens_emprestados.remove(item)
-            print(f"✅ '{item.titulo}' foi devolvido com sucesso por {self.nome}!")
+            print(f"'{item.titulo}' foi devolvido com sucesso por {self.nome}!")
         else:
             print(f"O item '{item.titulo}' não está na lista de empréstimos de {self.nome}.")
 
