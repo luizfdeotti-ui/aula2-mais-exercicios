@@ -18,10 +18,10 @@ class Carro:
         print(f"Combustível: {self.combustivel}")
 
 class CarroEletrico(Carro):
-    def __init__(self, marca, modelo):
+    def __init__(self, marca, modelo, bateria = 100):
         super().__init__(marca, modelo)
         self.combustivel = 0
-        self.bateria = 0
+        self.bateria = bateria
 
     def acelerar(self):
         if self.bateria >= 5:
